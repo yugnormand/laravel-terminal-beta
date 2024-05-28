@@ -5,10 +5,12 @@ namespace Todocoding\LaravelTerminalBeta\Http\Livewire;
 use Illuminate\Support\Str;
 use Todocoding\LaravelTerminalBeta\Rules\CommandRule;
 use Livewire\Component;
-use Illuminate\Foundation\Mix;
+use Livewire\InteractsWithBrowser;
 
 class Terminal extends Component
 {
+    use InteractsWithBrowser; // Assurez-vous d'utiliser ce trait
+
     /**
      * The current directory.
      *
