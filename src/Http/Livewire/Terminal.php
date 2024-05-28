@@ -5,6 +5,7 @@ namespace Todocoding\LaravelTerminalBeta\Http\Livewire;
 use Illuminate\Support\Str;
 use Todocoding\LaravelTerminalBeta\Rules\CommandRule;
 use Livewire\Component;
+use Illuminate\Foundation\Mix;
 
 class Terminal extends Component
 {
@@ -14,6 +15,11 @@ class Terminal extends Component
      * @var string
      */
     public string $currentDirectory;
+
+    public function __construct()
+    {
+       $this->currentDirectory = '';
+    }
 
     /**
      * The shell that will be used to run commands.
