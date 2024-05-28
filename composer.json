@@ -16,7 +16,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "livewire/livewire": "^2.12.6"
+        "livewire/livewire": "^3.5"
     },
     "extra": {
         "laravel": {
