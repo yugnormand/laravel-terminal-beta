@@ -5,7 +5,7 @@ namespace Todocoding\LaravelTerminalBeta;
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
 
-class LaravelShellServiceProvider extends ServiceProvider
+class LaravelTerminalBetaServiceProvider extends ServiceProvider
 {
     /**
      * The current version of Laravel Shell.
