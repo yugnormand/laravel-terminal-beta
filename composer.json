@@ -1,0 +1,28 @@
+{
+    "name": "todocoding/laravel-terminal-beta",
+    "description": "Integrate terminal in your laravel application",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Todocoding\\LaravelTerminalBeta\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Yug Normand Ngangue Fosso",
+            "email": "yugnormandngangue@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "livewire/livewire": "^2.11"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Todocoding\\LaravelTerminalBeta\\LaravelTerminalBetaServiceProvider"
+            ]
+        }
+    }
+}

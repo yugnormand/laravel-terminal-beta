@@ -1,0 +1,72 @@
+<?php
+
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Laravel Terminal Enabled
+    |--------------------------------------------------------------------------
+    |
+    | This option controls whether Laravel Terminal is enabled or not.
+    |
+    */
+
+    'enabled' => env('LARAVEL_TERMINAL_ENABLED', true),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Route Configuration
+    |--------------------------------------------------------------------------
+    |
+    | Here you may configure the route that will be used to access Laravel
+    | Shell.
+    |
+    */
+
+    'route' => [
+        'prefix' => 'laravel-terminal',
+        'middleware' => ['web'],
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Terminal Customization
+    |--------------------------------------------------------------------------
+    |
+    | Here you may configure how the terminal will look.
+    |
+    */
+
+    'terminal' => [
+        'colors' => [
+            'foreground' => '#eff0eb',
+            'background' => '#0000',
+            'cursorAccent' => '#0000',
+            'selection' => '#97979b33',
+            'black' => '#282a36',
+            'brightBlack' => '#686868',
+            'red' => '#890301',
+            'brightRed' => '#ff5c57',
+            'green' => '#5af78e',
+            'brightGreen' => '#5af78e',
+            'yellow' => '#f3f99d',
+            'brightYellow' => '#f3f99d',
+            'blue' => '#57c7ff',
+            'brightBlue' => '#57c7ff',
+            'magenta' => '#ff6ac1',
+            'brightMagenta' => '#ff6ac1',
+            'cyan' => '#9aedfe',
+            'brightCyan' => '#9aedfe',
+            'white' => '#f1f1f0',
+            'brightWhite' => '#eff0eb',
+        ],
+        'startup' => [
+            'Welcome to \x1b[34;1mLaravel Terminal Beta\x1b[0m \x1b[93;1mv' . \Todocoding\LaravelTerminalBeta\LaravelTerminalBetaServiceProvider::VERSION . '\x1b[0m!',
+            'Running Laravel \x1b[93;1mv' . Illuminate\Foundation\Application::VERSION . '\x1b[0m (PHP \x1b[93;1mv' . PHP_VERSION . '\x1b[0m)\r\n',
+        ],
+        'showInteractiveWarning' => true,
+        'cursorBlink' => true,
+        'prompt' => '$ ',
+    ],
+
+];
