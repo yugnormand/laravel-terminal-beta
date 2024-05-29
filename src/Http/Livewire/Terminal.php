@@ -15,10 +15,10 @@ class Terminal extends Component
      */
     public string $currentDirectory;
 
-    public function __construct()
-    {
-       $this->currentDirectory = '';
-    }
+    // public function __construct()
+    // {
+    //    $this->currentDirectory = '';
+    // }
 
     /**
      * The shell that will be used to run commands.
