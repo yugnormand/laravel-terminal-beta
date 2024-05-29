@@ -24,7 +24,7 @@ class Terminal extends Component
 
     public function __construct()
     {
-       $this->currentDirectory = base_path();
+       $this->currentDirectory = '';
        $this->commandLine = base_path();
     }
     /**
