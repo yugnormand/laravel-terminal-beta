@@ -39,9 +39,9 @@ return [
 
     'terminal' => [
         'colors' => [
-            'foreground' => '#0000',
-            'background' => '#0000',
-            'cursorAccent' => '#0000',
+            'foreground' => '#eff0eb',
+            'background' => '#282a36',
+            'cursorAccent' => '#282a36',
             'selection' => '#97979b33',
             'black' => '#282a36',
             'brightBlack' => '#686868',
