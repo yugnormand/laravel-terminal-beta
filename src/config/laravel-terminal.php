@@ -39,7 +39,7 @@ return [
 
     'terminal' => [
         'colors' => [
-            'foreground' => '#eff0eb',
+            'foreground' => '#0000',
             'background' => '#0000',
             'cursorAccent' => '#0000',
             'selection' => '#97979b33',
