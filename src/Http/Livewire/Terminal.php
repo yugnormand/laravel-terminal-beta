@@ -24,8 +24,8 @@ class Terminal extends Component
 
     public function __construct()
     {
-       $this->currentDirectory = base_path();
-       $this->commandLine = '';
+       $this->currentDirectory = getcwd();
+       $this->commandLine = 'bash -c "cd ' . $this->currentDirectory . '";';
     }
     /**
      * Mount the component.
