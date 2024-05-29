@@ -15,11 +15,6 @@ class Terminal extends Component
      */
     public string $currentDirectory;
 
-    public function __construct()
-    {
-       $this->currentDirectory = base_path();
-    }
-
     /**
      * The shell that will be used to run commands.
      *
@@ -27,6 +22,11 @@ class Terminal extends Component
      */
     public string $commandLine;
 
+    public function __construct()
+    {
+       $this->currentDirectory = base_path();
+       $this->commandLine = base_path();
+    }
     /**
      * Mount the component.
      */
