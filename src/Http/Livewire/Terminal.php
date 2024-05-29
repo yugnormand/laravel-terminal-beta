@@ -63,7 +63,7 @@ class Terminal extends Component
         ]);
 
         if ($validator->fails()) {
-            $this->emit('laravel-terminal:terminal-output', ['output' => [$validator->errors()->first()]]);
+            $this->dispatch('laravel-terminal:terminal-output', ['output' => [$validator->errors()->first()]]);
             return;
         }
 
@@ -76,7 +76,7 @@ class Terminal extends Component
             $output[$key] = trim($value);
         }
 
-        $this->emit('laravel-terminal:terminal-output', ['output' => $output]);
+        $this->dispatch('laravel-terminal:terminal-output', ['output' => $output]);
     }
 
 
@@ -96,9 +96,9 @@ class Terminal extends Component
                 $this->commandLine = 'bash -c "cd ' . $this->currentDirectory . '";';
             }
 
-            $this->emit('laravel-terminal:directory-change', ['directory' => $this->currentDirectory]);
+            $this->dispatch('laravel-terminal:directory-change', ['directory' => $this->currentDirectory]);
         } else {
-            $this->emit('laravel-terminal:terminal-output', ['output' => [__('Directory does not exist.')]]);
+            $this->dispatch('laravel-terminal:terminal-output', ['output' => [__('Directory does not exist.')]]);
         }
     }
 }
